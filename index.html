@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="homepage_ffxiv_hw2_Corince Wang" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="stylessheet.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>homepage_ffxiv</title>
+</head>
+
+<script type="text/javascript" src="task1.js"></script>
+<script type="text/javascript" src="task2.js"></script>
+<script type="text/javascript" src="task3.js"></script>
+
+<body>
+    <div style="font-size:0;">
+        <img id = "headimage" src="images/headimage.jpeg">
+        <img id = "shadowbringershead" src="images/shadowbringers.png">
+    </div>
+
+<!-- This is the nav bar section -->
+    <div style="font-size:0;" class="navbar">
+        <a id="navleft">HOME</a> 
+        <a>ABOUT</a>
+        <a>PATCHES</a>
+        <a>CHARACTERS</a>
+        <a>EXPLORE EORZEA</a>
+    </div>
+    <br>
+
+<!-- This is the section for birthday message presentation for task3 , individual3-->
+    <div class="card">
+        <h3 id="birthdayMessage">Happy Birthday!!!</h3>
+    </div>
+
+
+<!-- This is the card section for task1 , individual3-->
+    <div class="card" id="myCard" onclick="displayAnswer()" onmouseover="clickToCheckAnswer()" onmouseout="hideAnswer()">
+        <h2 id="demo" style="text-align: center;">What is the current Patch?</h2>
+    </div>
+
+
+<!-- This is the card that has image substitution for task2 , individual3-->
+    <div class="card" id="imageCard" onmouseover="showImage()" onmouseleave="showText()">
+        <h3 id="task2Text" style="text-align: center;"">--Move Mouser Here to Learn the New Content for Patch 6.5--</h3>
+        <img id="task2Image" src="images/newcontent.jpg">
+    </div>
+
+
+    
+<div id="undernavbar">
+    <div>
+        <h1>Meet Your Friends at EORZEA...</h1>
+    </div>
+
+<!-- Alphinaud Block -->
+    <div>
+        <img id="alphiimage" src="images/alphinaud.png">
+        <h2 class="name_block">Alphinaud Leveilleur<br>アルフィノ・ルヴェユール</h2>
+        <p class="quotation_block">"Minfilia has told us what Shadowless is up to.<br>
+            Eorzea remains in a state of crisis. It's up to us to save Eorzea from these threats."</p>                                                                                
+        <p class="quotation_name">--Alphinaud Leveilleur</p>
+        <p class="introduction_block">Alphinaud Leveilleur, the young master of the prestigious Leveilleur 
+            family, is a genius who was allowed to enroll in the Sarean University
+            of Magic along with his twin sister, Alise, at the young age of eleven.
+            He went on to earn a Bachelor's Degree in a number of fields,
+            including Magick and Etherology. After graduation, with the opportunity
+            to become an adult at the age of 16, he crossed the sea to Eorzea despite
+            his father's objections. All of this was to carry on the legacy of his grandfather,
+            Luisova. He joined the Scions of the Seventh Dawn. However, during his journey
+            with the Warriors of Light in the Dragon Poetry War, he gained experience
+            in meeting a wide variety of people, and he grew to be able to stand on his own.</p>
+    </div>
+
+    <br>
+<!-- Alisaie Block -->
+    <div>
+        <img id="alisimage" src="images/alisaie.png">
+        <h2 class="name_block_right">Alisaie Leveilleur<br>アリゼー・ルヴェユール</h2>
+        <p class="quotation_block_right">"Grandfather, there's no way he'd entrust his 
+            future to guys like that!<br>
+            Nor could he have left the organization to them!"<br></p>
+        <p class="quotation_name_right">--Alisaie Leveilleur</p>
+        <p class="introduction_block_right">A young girl affiliated with the Scions of the Seventh Dawn.
+            Although she and her twin brother Alphinaud are equallyknown as prodigies,
+            the two are completely opposite. The older brother
+            always likes to give long speeches and also likes to study politics.
+            Her sister, however, is very outspoken and will work hard to train
+            herself to save as many people as possible, even if she gets hurt doing so.
+           <br><br>
+            After being summoned to the First World by the Crystal Exarch, Alisaie decided to start investigating the source of
+            the flood of light.
+    </div>
+    <br><br>
+
+<!-- Crystal Exarch Block -->
+    <div style="clear:both">
+        <br>
+        <img id="crystalimage" src="images/crystalexarch.png">
+        <h2 class="name_block">Crystal Exarch<br>水晶公</h2>
+        <p class="quotation_block">"......haven't heard of the name yet.<br>
+            What happened to people with that name?"</p>
+        <p class="quotation_name">--Crystal Exarch</p>
+        <p class="introduction_block">"In the timeline where the Eighth Spiritual
+            Calamity occurred, when the Crystal Tower was reopened by Sid and the
+            others, a part of Gu-Raha had merged with it, extending his life as
+            its guardian. He saw the occurrence of the Eighth Spiritual Plague,
+            in which the Warriors of Light and Dawn and others died, and the
+            unending catastrophe that followed. According to the plan proposed
+            by Sid, Guru Raha sent himself and the Crystal Tower to the First
+            World after the Flood of Light in order to stop the source of
+            the Eighth Spiritual Plague, the Flood of Light, and, as the
+            "Crystal Exarch," built the Crystal Capital around the Crystal
+            Tower as a shelter for the people and a base of resistance.
+            As the "Crystal Lord", he built the Crystalium around the
+            Crystal Tower as a shelter for the people and a base of resistance."</p>
+    </div>
+
+        <br><br><br>
+
+<!-- 3 Columns Block -->
+    <div>
+        <div class="column1">
+            <div class="title_in_column">Background</div>
+            <p>Ala Mhigo is at last free from imperial rule, but that liberty may
+                prove fleeting as the Empire moves to both reclaim this bloodied
+                nation and subjugate all of Eorzea.In their hour of need, however,
+                they cannot turn to the Warrior of Light. Nor to the Scions, who
+                yet slumber, their souls adrift. 
+                <br><br>
+                The realm is left to struggle without its saviors. Here
+                a new adventure begins in a world where light ushers all unto
+                oblivion. But hope is not yet lost, for where there is light there is shadow.
+                <br><br>
+                The Crystal Exarch is the highesr leader, simtaneously the founder,
+                to the Crystal City's autonomous organization, the Settlement, and
+                leads the city's residents in their ongoing struggle. The title 
+                Crystal Exarch comes from the Crystal Tower and his crystallized body.</p>
+        </div>
+        <div class="column2">
+            <img src="images/poster.jpeg">
+        </div>
+        <div class="column3">
+            <div class="title_in_column">New Maps</div>
+            <p>The Flood of Light rendered the vast majority of the First devoid
+                of life, with Norvrandt remaining as the last bastion. Being a
+                reflection of the Source, its climates and environs resemble
+                those of Eorzea, though the cultures of its diverse range of
+                inhabitants have taken an entirely different course over its troubled history.</p>
+            <img src="images/crystalium.jpeg">
+        </div>
+    </div>
+</div>
+
+<br>
+
+<!-- About Block -->
+<div id="about">
+    <br>
+    <p>License | Rules & Policies | Privacy Policy | Cookie Policy</p>
+    <p>©2023 Sony Interactive Entertainment LLC."PlayStation Family Mark", "PlayStation", "PS5 logo", "PS5", "PS4 logo" and "PS4" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.
+        ESRB and the ESRB rating icon are registered trademarks of the Entertainment Software Association.
+        MAC is a trademark of Apple Inc., registered in the U.S. and other countries.
+        Windows is either a registered trademark or trademark of Microsoft Corporation in the United States and/or other countries.
+        All other trademarks are property of their respective owners.
+        ©2023 Valve Corporation. Steam and the Steam logo are trademarks and/or registered trademarks of Valve Corporation in the U.S. and/or other countries.</p>
+    
+    <p>© SQUARE ENIX
+        Square Enix, Inc.,  999 N. Pacific Coast Highway, El Segundo, California 90245 
+        FINAL FANTASY, FINAL FANTASY XIV, FFXIV, SQUARE ENIX, and the SQUARE ENIX logo are registered trademarks or trademarks of Square Enix Holdings Co., Ltd.
+        SHADOWBRINGERS is a registered trademark or trademark of Square Enix Co., Ltd.
+        LOGO ILLUSTRATION: © 2010, 2014, 2016, 2018, 2021 YOSHITAKA AMANO</p>
+    <br>
+</div>
+</body>
+</html>

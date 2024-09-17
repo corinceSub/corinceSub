@@ -1,0 +1,446 @@
+
+* {
+    font-family: 'AR One Sans', sans-serif;
+    color: #1b1b1c;
+    }
+
+body{
+    margin: 0;}
+
+h1{
+    font-family: 'Croissant One', cursive;
+    font-size: 4.5em;
+    text-align: left;}
+
+h2{
+    font-size: 2.7em;
+    text-align: left;
+    font-weight: bold;}
+
+p{
+    text-align: left;}
+
+
+.column1, .column2, .column3 {
+    background-color:#414052;
+    border-radius: 3%;
+    width: 31.3%;
+    max-height: 490px;
+    float: left;
+    margin: 1%;}
+
+.column1 > p, .column2 > p, .column3 > p{
+    font-size: 0.9em;
+    margin: 6%;
+    width: 88.8888889%;
+    color: white;}
+
+.column2 >img, .column3 > img{
+    margin: 5.5%;
+    max-width: 90%;
+    max-height: 450px;
+    text-align: center;}
+
+
+
+.navbar {
+    overflow: hidden;
+    top: 0;
+    position: sticky;
+    background-color: #070606;}
+
+.navbar a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 18px 16px;
+    text-decoration: none;
+    font-size: 17px;}
+
+.navbar a:hover {
+    background-color: #797780;
+    color: #f2f2f2;}
+
+.navbar > a {
+    margin: 0.2%;
+    float: right;}
+
+
+.name_block{
+    font-family: 'Noto Serif JP', serif;}
+
+.name_block_right{
+    text-align: right;
+    float: right;
+    font-family: 'Noto Serif JP', serif;}
+
+.quotation_block{
+    font-size: 1.5em;
+    font-weight: bold;
+    max-width: 64.901478%;
+    font-style: italic;
+}
+
+.quotation_name{
+    font-size: 1.6em;
+    font-weight: bold;
+    max-width: 64.901478%;
+    text-align: right;
+}
+
+.introduction_block{
+    font-size: 1.35em;
+    max-width: 63.807882%;
+}
+
+/* Below are right blocks */
+
+
+.quotation_block_right{
+    float: right;
+    font-size: 1.5em;
+    font-weight: bold;
+    max-width: 64.901478%;
+    font-style: italic;
+}
+
+.quotation_name_right{
+    float: right;
+    font-size: 1.6em;
+    font-weight: bold;
+    max-width: 64.901478%;
+    text-align: right;
+}
+
+.introduction_block_right{
+    float: right;
+    font-size: 1.35em;
+    max-width: 63.5%;
+}
+
+
+.title_in_column{
+    font-size: 2.2em;
+    margin: 5%;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+#about{
+    background-color:#414052;   
+    float: left;
+}
+
+#about > p{
+    text-align: center;
+    font-size: 0.9em;
+    color:#bdb8b8;
+}
+
+
+
+
+#alphiimage{
+    float: right;
+    max-width: 32.51%; /* originally 32.51%, but considering the padding inside image on left and right */
+}
+
+#alisimage{
+    float: left; 
+    max-width: 34.51%;
+}
+
+#birthdayMessage{
+    text-align: center;
+}
+
+#crystalimage{
+    float: right;
+    margin: 7%;
+    max-width: 26%;
+}
+
+#shadowbringershead{
+    display: none;
+}
+
+#navleft{
+    margin: 0.2%;
+    float: left;
+}
+
+#headimage{
+    max-width: 100%;
+}
+
+#task2Text{
+    border: medium solid rgb(79, 76, 76);
+    max-width: 40%;
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+#task2Image{
+    width: 70%;
+    display: none;
+    margin:auto;
+    border-radius: 10px;
+}
+
+#undernavbar{
+    margin: 7.7083333%
+}
+
+
+
+@media screen and (max-width: 768px){
+    h1{
+        text-align: center;
+        font-size: 3.5em;}
+
+    h2{
+        font-size: 1.5em;
+        text-align: left;
+        font-weight: bold;}
+
+
+    .column1, .column2, .column3 {
+        width: 45%;
+        float: left;
+        margin-bottom: 1em;}
+    
+    .column1 {
+        background-color:#414052;
+        border-radius: 3%;
+        width: 48%;
+        float: left;
+        max-height: 440px;
+        margin: 1%;}
+
+    .column3 {
+        background-color:#414052;
+        border-radius: 3%;
+        width: 48%;
+        float: right;
+        max-height: 440px;
+        margin: 1%;}
+    
+
+    .column1 > p, .column2 > p, .column3 > p{
+        font-size: 0.8em;
+        margin: 6%;
+        width: 88.8888889%;
+        color: white;}
+
+    .column2 >img, .column3 > img{
+        margin: 5.5%;
+        max-width: 90%;
+        max-height: 450px;
+        text-align: center;
+    }
+
+    .column2{
+        display:none;
+    }
+
+    .name_block{
+        width: 62.962963%;}
+
+    .name_block_right{
+        float: right;
+        text-align: left;}
+
+    .quotation_block{
+        font-size: 1em;
+        font-weight: bold;
+        max-width: 69.0235%;
+        font-style: italic;
+    }
+
+    .quotation_name{
+        font-size: 1em;
+        font-weight: bold;
+        max-width: 69.0235%;
+        text-align: right;
+    }
+    
+    .introduction_block{
+        font-size: 0.8em;
+        max-width: 66.666667%;
+    }
+
+/* These are the right blocks for introduction(Alisaie) */
+    
+
+    .quotation_block_right{
+        float: right;
+        font-size: 1em;
+        font-weight: bold;
+        max-width: 60.0235%;
+        font-style: italic;}
+
+    .quotation_name_right{
+        float: right;
+        font-size: 1em;
+        font-weight: bold;
+        max-width: 59.0235%;
+        text-align: right;}
+    
+    .introduction_block_right{
+        float: right;
+        font-size: 0.8em;
+        max-width: 58.666667%;}
+
+
+
+
+    #alphiimage{
+        float: right;
+        max-width: 38.5117%}
+
+    #alisimage{
+        float: left; 
+        max-width: 38.5117%;}
+    
+    #crystalimage{
+        float: right;
+        margin: 3%;
+        max-width: 30%;}
+
+    #about > p{
+        text-align: center;
+        color:#bdb8b8;
+        margin: 2%;
+        font-size: 0.6em;}
+
+    #shadowbringershead{
+        display: none;
+    }
+}
+
+/* These are the media queries for the phone layout */
+
+@media screen and (max-width: 375px){
+    h1{
+        font-size: 2em;}
+
+    
+
+    .column1{
+        background-color:#5b5a6e;
+        box-sizing:border-box;
+        float:left;
+        width: 100%;
+        max-height: 1000px;
+    }
+
+    .column3{
+        background-color:#5b5a6e;
+        box-sizing:border-box;
+        clear: both;
+        float: left;
+        width: 100%;    
+        max-height: 1000px;
+        display: block;
+        margin: 1%;
+    }
+
+    .navbar{
+        display: none;}
+
+    .name_block{
+        float: left;
+        font-size: 1.3em;
+        width: 80%;}
+        
+    .name_block_right{
+        float: left;
+        font-size: 1.3em;
+        width: 80%;}
+
+    .quotation_block{
+        float: left;
+        font-size: 0.8em;
+        font-weight: bold;
+        min-width: 65%;
+        max-width: 95%;
+        font-style: italic;}
+
+    .quotation_name{
+        display: none;}
+
+    .introduction_block{
+        float: left;
+        font-size: 0.8em;
+        min-width: 65%;
+        max-width: 95%;}
+
+
+    .quotation_block_right{
+        float: left;
+        font-size: 0.8em;
+        font-weight: bold;
+        min-width: 65%;
+        max-width: 95%;
+        font-style: italic;}
+    
+    .quotation_name_right{
+        display: none;}
+
+    .introduction_block_right{
+        float: left;
+        font-size: 0.8em;
+        min-width: 65%;
+        max-width: 95%;
+        }
+    
+    .title_in_column{
+        font-size: 1.8em;
+        margin: 5%;
+        font-weight: bold;
+        color: white;
+        text-align: center;
+    }
+
+    .title_in_column > p{
+        font-size: 0.6em;
+    }
+
+    #alphiimage{
+        display: block;
+        margin: 1%;
+        max-width: 80%}
+
+    #alisimage{
+        display: block;
+        margin: 6%;
+        max-width: 80%;}
+
+    
+    #crystalimage{
+        display: block;
+        margin: 14%;
+        max-width: 68%;}
+   
+    #about > p{
+        text-align: center;
+        color: #bdb8b8;
+        margin: 2%;
+        padding: 2%;
+        font-size: 0.35em;}
+    
+    #headimage{
+        display: none;
+    }
+
+    #shadowbringershead{
+        display:block;
+        max-width: 100%;
+    }
+
+}
